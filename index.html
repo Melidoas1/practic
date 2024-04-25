@@ -234,7 +234,7 @@
           <!-- Item 1-->
           <li class="column-item">
             <a href="https://exemple.com">
-              <img src="practic2/icons/in.svg" alt="Lindedin">
+              <img src="./icons/in.svg" alt="Lindedin">
             </a>
           </li>
         </ul>
@@ -253,7 +253,7 @@
     <!-- Info-->
     <div class="footer__info">
       <a class="footer__logo" href="https://example.com">
-        <img src="practic2/icons/logo2.svg" alt="logo">
+        <img src="./icons/logo2.svg" alt="logo">
       </a>
       <p class="footer__copy">ZEN is a licensed financial institution under the supervision of the Central Bank of Lithuania approved by European Banking Authority for 31 countries.</p>
       <p class="footer__copy">Registration number of the company 304749651, VAT ID LT100011714916.</p>
@@ -262,9 +262,53 @@
       <p class="footer__copy">Company address: Mėsinių g. 5, LT-01133, Vilnius, Lithuania.</p>
       <p class="footer__copy">Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.</p>
       <a class="footer__dev" href="https://example.com">
-        <img src="practic2/icons/developer.svg" alt="Developer">
+        <img src="./icons/developer.svg" alt="Developer">
       </a>
     </div>
   </footer>
+  <!-- Модальное окно-->
+  <div class="modal" id="modal">
+    <div class="modal__body">
+      <!-- Close -->
+      <button class="modal__close" id="close">
+        <img src="./icons/close.svg" alt="close">
+      </button>
+      <!-- Title -->
+      <h3 class="modal__title">Order a consultation</h3>
+      <!-- Form -->
+      <form class="form" id="order">
+        <!-- Name -->
+        <label class="form__input">
+          <span>Name</span> 
+          <input type="text" id="name">
+        </label>
+        <!-- Tel -->
+        <label class="form__input">
+          <span>Tel</span> 
+          <input type="tel" id="tel">
+        </label>
+        <!-- Email -->
+        <label class="form__input">
+          <span>E-mail</span> 
+          <input type="email" id="email">
+        </label>
+        <!-- Connection -->
+        <label class="form__select">
+          <span>Connetcion</span>
+          <select id="connection">
+            <option value="telegram">Telegram</option>
+            <option value="whatsapp">WhatsApp</option>
+          </select>
+        </label>
+        <!-- Privacy policy -->
+        <label class="form_checkbox">
+          <input type="checkbox" id="policy">
+          <a href="https://exemple.com/policy" target="_blank">Privacy policy</a>
+        </label>
+        <!-- Submit -->
+        <button class="form__submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
